@@ -1,0 +1,84 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,body,#root{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+body{
+  background-color: beige;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.main{
+  height: 600px;
+  width: 550px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-board{
+  transform: translateY(30px);
+  /* 레이아웃 안건들고 요소만 움직일수 있다! */
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontal-line{
+  width: 400px;
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.vertical-line{
+  height: 490px;
+  border: 1px solid black;
+  /* margin-top: 30px; */
+}
+.item-img{
+  width: 150px;
+  height: 150px;
+}
+.item-board-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  transform: translateX(-20px);
+}
+.item-board-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  transform: translateX(20px);
+}
+.result{
+  transform: translateY(60px);
+  border: 5px solid black;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+.item-button{
+  display: flex;
+  gap: 10px;
+}
