@@ -9,6 +9,7 @@ function App() {
 
   const [currentItem, setCurrentItem] = useState("");
   const [computerItem, setComputerItem] = useState("");
+  const [gameResult, setGameResult] = useState("");
 
   const item={
     rock:{
@@ -27,9 +28,14 @@ function App() {
   const itemNameList = Object.keys(item);   //['rock', 'scissors', 'paper']
 
   const selectItem = (itemName)=>{
-    setCurrentItem(item[itemName]);
-    setComputerItem(randomItem());
-    randomItem();
+    const user = item[itemName];
+    const computer = randomItem();
+
+    setCurrentItem(user);
+    setComputerItem(computer);
+
+    setGameResult(calculateResult(user, computer));
+    console.log(gameResult);
   }
 
   const randomItem = ()=>{
@@ -37,10 +43,16 @@ function App() {
     return item[itemNameList[randomNum]];
   }
 
-  const gameResult = ()=>{
-
+  const calculateResult = (user, computer)=>{
+    // console.log("user", "computer", user, computer) -> 오브젝트로 들어온다
+    if(user.name === computer.name){
+      return "tie"
+    } else if(user.name === "rock") {return computer.name === "scissors"?"win":"lose"}
+      else if(user.name === "scissors") {return computer.name === "paper"?"win":"lose"}
+      else if(user.name === "paper") {return computer.name === "rock"?"win":"lose"}
+      
   }
-  
+
   return (
     <div>
       <div className='container'>
