@@ -9,17 +9,16 @@ user가 3개의 버튼(rock, scissors, paper)으로 어떤 것을 낼지 결정�
 user와 컴퓨터 중 먼저 점수가 5점에 도달하는 즉시 게임이 종료됩니다.<br>
 <br>
 <h3>📂 폴더 구조</h3>
-📦 rock-scissors-paper
-┗ 📂 src
-   ┣ 📂 components
-   ┃ ┣ 📜 Board.jsx
-   ┃ ┗ 📜 Button.jsx
-   ┣ 📂 img
-   ┃ ┗ 📜 game-logo-transparent-trimmed.png
-   ┣ 📜 App.jsx
-   ┣ 📜 App.css
-   ┗ 📜 main.jsx
-
+📦 rock-scissors-paper/<br>
+┗ 📂 src/<br>
+   ┣ 📂 components<br>
+   ┃ ┣ 📜 Board.jsx<br>
+   ┃ ┗ 📜 Button.jsx<br>
+   ┣ 📂 img<br>
+   ┃ ┗ 📜 game-logo-transparent-trimmed.png<br>
+   ┣ 📜 App.jsx<br>
+   ┣ 📜 App.css<br>
+   ┗ 📜 main.jsx<br>
 <br>
 <h3>🧩 주요 기능</h3>
 ✅ 가위·바위·보 버튼 클릭 시, `useState`로 상태를 관리하여 실시간으로 화면에 반영됩니다.
