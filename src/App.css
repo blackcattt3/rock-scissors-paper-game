@@ -51,6 +51,7 @@ body{
   display: flex;
   align-items: center;
   gap: 40px;
+  position: relative;
 }
 .vertical-line{
   height: 490px;
@@ -60,6 +61,7 @@ body{
 .item-img{
   width: 150px;
   height: 150px;
+  /* transform: translate(-50%, -50%); */
 }
 .item-board-left{
   display: flex;

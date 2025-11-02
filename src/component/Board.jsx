@@ -19,6 +19,7 @@ const Board = ({title, currentItem, gameResult}) => {
 
   return (
     <div className={title=="You"?"item-board-left":"item-board-right"}>
+        <h2>{title}</h2>
         <img className='item-img' src={currentItem?currentItem.img:basicImg}/>
         {gameResult && <h2 className={`result ${result}`}>{result}</h2>}
     </div>
