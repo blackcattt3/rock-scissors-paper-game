@@ -10,6 +10,10 @@ html,body,#root{
 }
 body{
   background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .container{
   height: 100vh;
