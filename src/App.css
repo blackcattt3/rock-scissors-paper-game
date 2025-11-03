@@ -87,6 +87,10 @@ body{
   display: flex;
   gap: 10px;
 }
+.item-button div{
+  font-size: 20px;
+  font-weight: 600;
+}
 .item-button:hover{
   cursor: pointer;
 }
@@ -157,4 +161,28 @@ body{
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+
+
+@media (max-width: 480px){
+  .main{
+    width: 400px;
+    height: 500px;
+    /* padding: 10px; */
+  }
+  .horizontal-line{
+    width: 320px;
+  }
+  .vertical-line{
+    height: 400px;
+  }
+  .row{
+    gap:0px;
+  }
+  .item-board-left, .item-board-right{
+    gap: 0px;
+  }
+  .result{
+    transform: translateY(20px);
+  }
 }
